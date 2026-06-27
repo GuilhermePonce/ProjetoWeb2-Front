@@ -1,13 +1,8 @@
 # DivideAi Frontend
-
-Interface web da aplicacao DivideAi, criada com HTML, CSS e TypeScript puro para consumir a API Django do backend.
-
 ## Integrantes
 
-- Nome do integrante 1
-- Nome do integrante 2
-- Nome do integrante 3
-
+- Guilherme Ponce 2011179
+- 
 ## Descricao do projeto
 
 O frontend permite cadastro, login, recuperacao simulada de senha, troca de senha, gerenciamento de grupos, cadastro de despesas compartilhadas e visualizacao dos saldos calculados pela API.
@@ -22,23 +17,23 @@ O frontend permite cadastro, login, recuperacao simulada de senha, troca de senh
 ## Instalacao local
 
 1. Clonar o repositorio:
-   ```bash
+  
    git clone LINK_DO_REPOSITORIO_FRONTEND
    cd divideai-frontend
-   ```
+ 
 2. Instalar dependencias:
-   ```bash
+
    npm install
-   ```
+
 3. Configurar a URL da API em um arquivo `.env`, se necessario:
-   ```env
+  
    VITE_API_BASE_URL=http://localhost:8000/api
-   ```
+  
 4. Rodar o projeto localmente:
-   ```bash
+  
    npm run dev
-   ```
-5. Acessar o endereco indicado pelo Vite, normalmente `http://localhost:5173`.
+  
+5. Acessar o endereco indicado pelo Vite
 
 ## Como usar
 
@@ -78,27 +73,22 @@ A tela de detalhes do grupo mostra totais pagos, valores devidos, saldo positivo
 
 ## Imagens da aplicacao
 
-![Tela de Login](public/screenshots/login.png)
-![Dashboard](public/screenshots/dashboard.png)
-![Detalhes do Grupo](public/screenshots/group-details.png)
+#Deploy
 
-## Deploy
-
-Sugestoes de hospedagem: Vercel, Netlify, GitHub Pages ou AWS.
+TODO
 
 Configure a variavel de ambiente no provedor:
 
-```env
-VITE_API_BASE_URL=https://LINK_DO_BACKEND_PUBLICADO/api
-```
+TODO
 
 Depois rode o build:
 
-```bash
-npm run build
-```
 
-Link do frontend publicado: `INSERIR_LINK_DO_DEPLOY_FRONTEND`
+npm run build
+
+Link do frontend publicado: 
+
+TODO
 
 ## O que foi desenvolvido
 
@@ -125,10 +115,3 @@ Link do frontend publicado: `INSERIR_LINK_DO_DEPLOY_FRONTEND`
 
 ## O que nao funcionou
 
-- O envio real de e-mail do esqueci minha senha nao foi implementado; a funcionalidade e simulada pelo backend.
-- As imagens do README sao capturas/representacoes locais salvas em `public/screenshots`.
-
-## Link do projeto
-
-- Repositorio frontend: `INSERIR_LINK_DO_REPOSITORIO_FRONTEND`
-- Deploy frontend: `INSERIR_LINK_DO_DEPLOY_FRONTEND`
