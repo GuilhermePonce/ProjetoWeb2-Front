@@ -2,7 +2,7 @@
 ## Integrantes
 
 - Guilherme Ponce 2011179
-- 
+  
 ## Descricao do projeto
 
 O frontend permite cadastro, login, recuperacao simulada de senha, troca de senha, gerenciamento de grupos, cadastro de despesas compartilhadas e visualizacao dos saldos calculados pela API.
@@ -82,7 +82,6 @@ Configure a variavel de ambiente no provedor:
 TODO
 
 Depois rode o build:
-
 
 npm run build
 
