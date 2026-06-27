@@ -2,7 +2,7 @@
 ## Integrantes
 
 - Guilherme Ponce 2011179
-- 
+
 ## Descricao do projeto
 
 O frontend permite cadastro, login, recuperacao simulada de senha, troca de senha, gerenciamento de grupos, cadastro de despesas compartilhadas e visualizacao dos saldos calculados pela API.
@@ -73,20 +73,36 @@ A tela de detalhes do grupo mostra totais pagos, valores devidos, saldo positivo
 
 ## Imagens da aplicacao
 
-#Deploy
+## Deploy
 
-TODO
+### Publicar o frontend no Render
 
-Configure a variavel de ambiente no provedor:
+Publique o backend primeiro, pois o build do frontend precisa da URL da API.
+O arquivo `render.yaml`, localizado na raiz do repositorio, configura o site
+estatico.
 
-TODO
+1. Envie estas alteracoes para o GitHub.
+2. Entre em `https://render.com` usando sua conta do GitHub.
+3. No Dashboard, clique em `New` e depois em `Blueprint`.
+4. Conecte o repositorio `GuilhermePonce/ProjetoWeb2-Front`.
+5. Quando o Render solicitar `VITE_API_BASE_URL`, informe a URL completa do
+   backend com `/api`, por exemplo:
 
-Depois rode o build:
+   ```text
+   https://divideai-api.onrender.com/api
+   ```
 
+6. Confirme a criacao do servico `divideai-web` e aguarde o build.
+7. Copie a URL criada, por exemplo `https://divideai-web.onrender.com`.
+8. Volte ao servico do backend e configure essa URL nas variaveis
+   `CORS_ALLOWED_ORIGINS` e `CSRF_TRUSTED_ORIGINS`.
+9. Aguarde o redeploy do backend e teste cadastro, login, grupos e despesas.
 
-npm run build
+O Render executa `npm install && npm run build` e publica o diretorio `dist`.
+Sempre que houver um novo `git push` na branch conectada, um novo deploy sera
+feito automaticamente.
 
-Link do frontend publicado: 
+Link do frontend publicado: TODO
 
 TODO
 
@@ -112,6 +128,4 @@ TODO
 - Criacao, edicao e exclusao de despesas.
 - Exibicao de participantes, saldos e pagamentos sugeridos.
 - Logout e troca de usuario, com alteracao dos dados exibidos conforme o token.
-
-## O que nao funcionou
 

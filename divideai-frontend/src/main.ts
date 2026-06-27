@@ -196,13 +196,6 @@ async function renderDashboard(): Promise<void> {
         </section>
       `,
     );
-    document.querySelectorAll<HTMLButtonElement>("[data-delete-expense]").forEach((button) => {
-      button.addEventListener("click", async () => {
-        if (!confirm("Excluir esta despesa?")) return;
-        await deleteExpense(Number(button.dataset.deleteExpense));
-        navigate(`/groups/${groupId}`);
-      });
-    });
   } catch (error) {
     renderError(error);
   }
@@ -337,6 +330,13 @@ async function renderGroupDetails(params: Record<string, string>): Promise<void>
         </section>
       `,
     );
+    document.querySelectorAll<HTMLButtonElement>("[data-delete-expense]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        if (!confirm("Excluir esta despesa?")) return;
+        await deleteExpense(Number(button.dataset.deleteExpense));
+        navigate(`/groups/${groupId}`);
+      });
+    });
   } catch (error) {
     renderError(error);
   }
