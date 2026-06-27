@@ -7,13 +7,6 @@
 
 O frontend permite cadastro, login, recuperacao simulada de senha, troca de senha, gerenciamento de grupos, cadastro de despesas compartilhadas e visualizacao dos saldos calculados pela API.
 
-## Tecnologias utilizadas
-
-- HTML
-- CSS
-- TypeScript
-- Vite
-
 ## Instalacao local
 
 1. Clonar o repositorio:
@@ -101,6 +94,9 @@ estatico.
 O Render executa `npm install && npm run build` e publica o diretorio `dist`.
 Sempre que houver um novo `git push` na branch conectada, um novo deploy sera
 feito automaticamente.
+
+Para fazer o build localmente, execute `npm run build`.
+
 
 Link do frontend publicado: TODO
 
