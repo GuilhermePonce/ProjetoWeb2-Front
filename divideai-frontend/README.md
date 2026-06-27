@@ -7,13 +7,6 @@
 
 O frontend permite cadastro, login, recuperacao simulada de senha, troca de senha, gerenciamento de grupos, cadastro de despesas compartilhadas e visualizacao dos saldos calculados pela API.
 
-## Tecnologias utilizadas
-
-- HTML
-- CSS
-- TypeScript
-- Vite
-
 ## Instalacao local
 
 1. Clonar o repositorio:
